@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besties - Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        FREE SHIPPING - ORDER TODAY
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo-section">
+            <div class="logo-icon">🐾</div>
+            <div class="logo-text">
+                <h1>BESTIES</h1>
+                <p>A Pet's Favorite Place</p>
+            </div>
+        </div>
+
+        <div class="header-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <div class="menu-cart">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="cart">🛒 <span class="cart-count">0</span></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Zbulo dashurinë për kafshët!</h2>
+            <button class="cta-button">Bli tani</button>
+            <div class="hero-image">
+                <img src="images/dog.jpg" alt="Qeni i lumtur" />
+            </div>
+        </div>
+
+        <!-- Shigjeta për të kaluar faqen -->
+        <a href="dogs.html" class="circle-arrow right-arrow">›</a>
+    </section>
+
+    <!-- Menuja anësore -->
+    <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()"></div>
+        <div class="search-box">
+            <input type="text" placeholder="Kërko...">
+            <button>🔍</button>
+        </div>
+        <div class="side-nav">
+            <a href="#">Faqja Kryesore</a>
+            <a href="#">Qentë</a>
+            <a href="#">Macet</a>
+            <a href="#">Aksesorët</a>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
