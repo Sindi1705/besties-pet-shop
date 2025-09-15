@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deal of the Week - Dogs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+    }
+
+    /* Animacionet */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* DEAL OF THE WEEK */
+    .deal-section {
+      background: url('images/dog-treats.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .deal-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 50px 30px;
+      border-radius: 15px;
+      animation: zoomIn 1s ease-out;
+    }
+
+    .deal-content h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .deal-content hr {
+      width: 60px;
+      border: 1px solid #fff;
+      margin: 20px auto;
+    }
+
+    .deal-content p {
+      font-size: 22px;
+      margin: 8px 0;
+    }
+
+    .shop-button {
+      background-color: #ff4d30;
+      color: white;
+      padding: 14px 30px;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .shop-button:hover {
+      background-color: #e5391f;
+    }
+
+    /* TREATS SECTION */
+    .treats-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 70px 20px;
+      background-color: #f4f4f4;
+    }
+
+    .treat-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 220px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .treat-card:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+    .treat-card:nth-child(2) {
+      animation-delay: 0.6s;
+    }
+    .treat-card:nth-child(3) {
+      animation-delay: 0.9s;
+    }
+    .treat-card:nth-child(4) {
+      animation-delay: 1.2s;
+    }
+
+    .treat-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .treat-card h3 {
+      margin-top: 15px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- DEAL OF THE WEEK -->
+  <section class="deal-section">
+    <div class="deal-content">
+      <h2>DEAL OF<br />THE WEEK</h2>
+      <hr />
+      <p>50% OFF</p>
+      <p>on dog treats</p>
+      <a href="#dog-treats" class="shop-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- USHQIMET E QENVE -->
+  <section id="dog-treats" class="treats-section">
+    <div class="treat-card">
+      <img src="images/treat1.jpg" alt="Biskota me mish viçi" />
+      <h3>Biskota me mish viçi</h3>
+    </div>
+    <div class="treat-card">
+      <img src="images/treat2.jpg" alt="Snacks me pulë" />
+      <h3>Snacks me pulë</h3>
+    </div>
+    <div class="treat-card">
+      <img src="images/treat3.jpg" alt="Kocka vegjetale" />
+      <h3>Kocka vegjetariane</h3>
+    </div>
+    <div class="treat-card">
+      <img src="images/treat4.jpg" alt="Dhembë pastrues" />
+      <h3>Shkopinj dental</h3>
+    </div>
+  </section>
+<!-- SHIGJETAT PËR KALIMIN NË FAQE TJERA -->
+<a href="index.html" class="circle-arrow left-arrow">&#10094;</a> <!-- KTHEHU PAS -->
+<a href="dog-deal.html" class="circle-arrow right-arrow">&#10095;</a> <!-- KALO PËRPARA -->
+
+</body>
+</html>
